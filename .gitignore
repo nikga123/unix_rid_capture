@@ -1,0 +1,20 @@
+# Build artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.o
+*.d
+
+# Executables
+rid_capture
+bluez_sniffer
+nrf_sniffer
+m_per_deg
+
+# Generated files
+rid_capture.h
+
+# Downloaded dependencies
+opendroneid.c
+opendroneid.h

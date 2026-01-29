@@ -384,6 +384,11 @@ int main(int argc,char *argv[]) {
     }
   }
 
+  /* Set packet buffer timeout to 1ms for faster packet delivery */
+  if (pcap_set_timeout(session, 1) != 0) {
+    fprintf(stderr,"pcap_set_timeout():  %s\n",pcap_geterr(session));
+  }
+
 #if 0
 
   bpf_u_int32 netmask = 0;
